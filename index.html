@@ -1,0 +1,106 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Niko</title>
+    <link rel="icon" type="image/png" href="/favicon.png">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@300;400;500;600&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="desktop">
+        <div class="window" id="terminal-window">
+            <div class="window-header">
+                <div class="window-controls">
+                    <button class="control-btn close" onclick="minimizeWindow()"></button>
+                    <button class="control-btn minimize" onclick="minimizeWindow()"></button>
+                    <button class="control-btn maximize" onclick="toggleFullscreen()"></button>
+                </div>
+                <div class="window-title">niko@hacker:~/info$ cat profile.md</div>
+            </div>
+            <div class="window-content">
+                <div class="terminal-output">
+                    <div class="command-line">
+                        <span class="prompt">niko@hacker:~$</span> 
+                        <span class="command">whoami</span>
+                    </div>
+                    <div class="output">Hacker | Pentester | Young Entrepreneur | Cat Lover</div>
+                    
+                    <div class="command-line">
+                        <span class="prompt">niko@hacker:~$</span> 
+                        <span class="command">cat about.txt</span>
+                    </div>
+                    <div class="profile-section">
+                        <h1 class="name">Niko</h1>
+                        <p class="tagline">13 years old and already breaking systems 🔥</p>
+                        <div class="contact-info">
+                            <span class="contact-item">📧 niko.is.here2025@gmail.com</span>
+                            <span class="contact-item">🐙 github.com/BryceDevTest</span>
+                        </div>
+                    </div>
+
+                    <div class="command-line">
+                        <span class="prompt">niko@hacker:~$</span> 
+                        <span class="command">ls -la interests/</span>
+                    </div>
+                    <div class="skills-section">
+                        <div class="skill-category">
+                            <h3>Cybersecurity</h3>
+                            <div class="skill-tags">
+                                <span class="skill-tag">Pentesting</span>
+                                <span class="skill-tag">Ethical Hacking</span>
+                                <span class="skill-tag">Security Research</span>
+                            </div>
+                        </div>
+                        <div class="skill-category">
+                            <h3>Development</h3>
+                            <div class="skill-tags">
+                                <span class="skill-tag">Python</span>
+                                <span class="skill-tag">Web Dev</span>
+                                <span class="skill-tag">Linux</span>
+                            </div>
+                        </div>
+                        <div class="skill-category">
+                            <h3>Other Interests</h3>
+                            <div class="skill-tags">
+                                <span class="skill-tag">Business</span>
+                                <span class="skill-tag">Drawing</span>
+                                <span class="skill-tag">Cats 🐱</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="command-line">
+                        <span class="prompt">niko@hacker:~$</span> 
+                        <span class="command">cat status.log</span>
+                    </div>
+                    <div class="status-section">
+                        <div class="status-card">
+                            <h3>🎯 Current Mission</h3>
+                            <p>Learning advanced pentesting techniques and building my first cybersecurity business</p>
+                        </div>
+                        <div class="status-card">
+                            <h3>🔥 Fun Fact</h3>
+                            <p>I started hacking when I was 11, and yes, cats are definitely the superior pet!</p>
+                        </div>
+                    </div>
+
+                    <div class="command-line">
+                        <span class="prompt">niko@hacker:~$</span> 
+                        <span class="command">echo "Ready to hack the world! 💀"</span>
+                    </div>
+                    <div class="output">Ready to hack the world! 💀</div>
+                    
+                    <div class="command-line blinking-cursor">
+                        <span class="prompt">niko@hacker:~$</span> 
+                        <span class="cursor">_</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
